@@ -1,6 +1,7 @@
 package com.xheghun.composecleanarchitecture.presentation.coin_list.components
 
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -21,12 +22,11 @@ fun CoinListItem(coin: Coin, onItemClick: (Coin) -> Unit) {
     Row(modifier = Modifier
         .fillMaxWidth()
         .padding(20.dp)
-        .clickable { onItemClick(coin) }) {
+        .clickable { onItemClick(coin) }, horizontalArrangement = Arrangement.SpaceBetween) {
         Text(
             "${coin.rank} ${coin.name} ${coin.symbol}",
             style = MaterialTheme.typography.body1,
             overflow = TextOverflow.Ellipsis,
-
         )
 
         Text(

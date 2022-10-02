@@ -1,4 +1,4 @@
-package com.xheghun.composecleanarchitecture.presentation.ui.theme
+package com.xheghun.composecleanarchitecture.presentation.theme
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors

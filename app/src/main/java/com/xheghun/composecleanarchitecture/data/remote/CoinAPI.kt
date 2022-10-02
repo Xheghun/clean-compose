@@ -10,6 +10,6 @@ interface CoinAPI {
     @GET("/v1/coins")
     suspend fun getCoins(): List<CoinDTO>
 
-    @GET("/v1/coin/{coinId}")
+    @GET("/v1/coins/{coinId}")
     suspend fun getCoinById(@Path("coinId") coinId: String) : CoinDetailsDTO
 }

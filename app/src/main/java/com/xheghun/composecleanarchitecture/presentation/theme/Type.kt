@@ -1,4 +1,4 @@
-package com.xheghun.composecleanarchitecture.presentation.ui.theme
+package com.xheghun.composecleanarchitecture.presentation.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
