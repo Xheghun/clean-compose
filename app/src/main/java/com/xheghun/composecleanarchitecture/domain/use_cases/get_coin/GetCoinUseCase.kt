@@ -15,8 +15,6 @@ import javax.inject.Inject
 class GetCoinUseCase @Inject constructor(
     val repo: CoinRepo,
 ) {
-
-
     operator fun invoke(id: String): Flow<Resource<CoinDetail>> = flow {
         try {
             emit(Resource.Loading())
